@@ -1,0 +1,47 @@
+.greetings {
+    height: calc(100vh - 65px);
+    background: url(../../img/greetings-bg.png) center no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+    scroll-margin-top: 75px; 
+    border-bottom: 10px black solid;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        background-color: #000000A0;
+        position: absolute;
+        height: calc(100vh - 65px);
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+}
+
+.greetings__content {
+    position: absolute;
+    transform: translate(-50%, 0);
+    z-index: 2;
+    left: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.greetings__title {
+    font-size: clamp(3.434rem, 0.0008rem + 11.6867vw, 5.625rem);
+    letter-spacing: 5px;
+    font-weight: 700;
+}
+
+.greetings__desc {
+    font-size: clamp(1.221rem, -0.0004rem + 4.1567vw, 2rem);
+    letter-spacing: 3px;
+    font-weight: 500;
+}

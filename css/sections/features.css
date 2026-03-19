@@ -1,0 +1,207 @@
+.features {
+    margin-top: 50px;
+    scroll-margin-top: 75px;
+}
+
+.features__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.features__title {
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.features__block {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px 30px;
+}
+
+.features__card {
+    background: lightgray;
+    width: 500px;
+    min-height: 250px;
+    height: 250px;
+    padding: 30px 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    row-gap: 30px;
+    position: relative;
+    color: white;
+    box-shadow: 5px 5px 8px 2px gray;
+    transition: 0.2s all;
+    
+    &:hover{
+        box-shadow: 5px 5px 8px 2px limegreen;
+    }
+}
+
+.features__card-title {
+    font-size: clamp(1.75rem, 0.9921rem + 1.5748vw, 2rem);
+    font-weight: 500;
+    z-index: 2;
+    text-align: center;
+}
+
+.features__card-desc {
+    font-size: clamp(1.128rem, 0.0008rem + 2.3425vw, 1.5rem);
+    z-index: 2;
+    text-align: justify;
+    text-align-last: center;
+}
+
+#features1{
+    background: url(../../img/features-card-bg1.png) center no-repeat;
+    background-size: cover;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        background-color: #00000090;
+        border-radius: 15px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+}
+
+#features2{
+    background: url(../../img/features-card-bg2.png) center no-repeat;
+    background-size: cover;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        background-color: #00000090;
+        border-radius: 15px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+}
+
+#features3{
+    background: url(../../img/features-card-bg3.png) center no-repeat;
+    background-size: cover;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        background-color: #00000090;
+        border-radius: 15px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+}
+
+#features4{
+    background: url(../../img/features-card-bg4.png) center no-repeat;
+    background-size: cover;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        background-color: #00000090;
+        border-radius: 15px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+}
+
+#features5{
+    background: url(../../img/features-card-bg5.png) center no-repeat;
+    background-size: cover;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        background-color: #00000090;
+        border-radius: 15px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+}
+
+#features6{
+    background: url(../../img/features-card-bg6.png) center no-repeat;
+    background-size: cover;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        background-color: #00000090;
+        border-radius: 15px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+}
+
+#features7{
+    background: url(../../img/features-card-bg7.png) center no-repeat;
+    background-size: cover;
+
+    &::before {
+        content: '';
+        display: inline-block;
+        background-color: #00000090;
+        border-radius: 15px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+}
+
+@media (max-width: 1060px) {
+    .features__card{
+        width: 90%;
+    }
+}
+@media (max-width: 450px) {
+    .features__card-desc{
+        text-align: center;
+    }
+}
+@media (max-width: 310px) {
+    .features__title {
+        letter-spacing: 0;
+        font-size: 46px;
+    } 
+}
