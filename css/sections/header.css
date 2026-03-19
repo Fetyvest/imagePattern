@@ -48,6 +48,7 @@
     border: 2px limegreen solid;
     padding: 10px 20px;
     display: block;
+    user-select: none;
 }
 
 .under-header {

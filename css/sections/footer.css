@@ -30,6 +30,7 @@
     text-decoration: underline;
     cursor: pointer;
     transition: all 0.5s;
+    user-select: none;
 
     &:hover{
         color: limegreen;
